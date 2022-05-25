@@ -1,0 +1,101 @@
+{
+  "format": 1,
+  "restore": {
+    "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj": {}
+  },
+  "projects": {
+    "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj",
+        "projectName": "LoggingStandards",
+        "projectPath": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "Azure.Storage.Common": {
+              "target": "Package",
+              "version": "[12.9.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.8.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-preview.3.22179.4\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
