@@ -1,4 +1,5 @@
 ﻿using Azure.Messaging.ServiceBus;
+using LoggingStandards.Interfaces.SendMessage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LoggingStandards.Queues
 {
-    public class AzureServiceBus
+    public class AzureServiceBus : ISendMessageToQueue
     {
         // connection string to your Service Bus namespace
         static string connectionString = "<NAMESPACE CONNECTION STRING>";
@@ -24,7 +25,7 @@ namespace LoggingStandards.Queues
         // number of messages to be sent to the queue
         private const int numOfMessages = 1;
 
-        public async Task<bool> SendMessage(string message)
+        public async Task<bool> SendMessageAsync(string message)
         {
             // The Service Bus client types are safe to cache and use as a singleton for the lifetime
             // of the application, which is best practice when messages are being published or read

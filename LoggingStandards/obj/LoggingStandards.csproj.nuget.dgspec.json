@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj": {}
+    "T:\\Project Cerebus\\LoggingClient\\LoggingStandards\\LoggingStandards.csproj": {}
   },
   "projects": {
-    "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj": {
+    "T:\\Project Cerebus\\LoggingClient\\LoggingStandards\\LoggingStandards.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj",
+        "projectUniqueName": "T:\\Project Cerebus\\LoggingClient\\LoggingStandards\\LoggingStandards.csproj",
         "projectName": "LoggingStandards",
-        "projectPath": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\LoggingStandards.csproj",
+        "projectPath": "T:\\Project Cerebus\\LoggingClient\\LoggingStandards\\LoggingStandards.csproj",
         "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
-        "outputPath": "T:\\Development\\Logging Tool\\LoggingStandards\\LoggingStandards\\obj\\",
+        "outputPath": "T:\\Project Cerebus\\LoggingClient\\LoggingStandards\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -88,6 +88,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.3, 6.0.3]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.3, 6.0.3]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.3, 6.0.3]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using LoggingStandards.Interfaces.SendMessage;
+using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace LoggingStandards.Queues
 {
-    internal class RabbitMqTopic
+    internal class RabbitMqTopic : ISendMessageToQueue
     {
         string routingKey = "set.env.variable";
 
-        public async Task<bool> SendMessage(string message)
+        public async Task<bool> SendMessageAsync(string message)
         {
             try
             {

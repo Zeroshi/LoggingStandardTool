@@ -1,4 +1,5 @@
-﻿using RabbitMQ.Client;
+﻿using LoggingStandards.Interfaces.SendMessage;
+using RabbitMQ.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LoggingStandards.Queues
 {
-    public class RabbitMqQueue
+    public class RabbitMqQueue : ISendMessageToQueue
     {
-        public async Task<bool> SendMessage(string message)
+        public async Task<bool> SendMessageAsync(string message)
         {
             try
             {
