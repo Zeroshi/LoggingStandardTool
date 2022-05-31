@@ -29,9 +29,8 @@ namespace LoggingStandards.Classes.Enums
             serverless = 8,
         }
 
-        public enum encryption 
-        { 
-        
+        public enum encryption
+        {
             encrypted = 0,
             unecrypted = 1,
             not_avaiable = 3
@@ -45,22 +44,23 @@ namespace LoggingStandards.Classes.Enums
             stage = 3,
             production = 4,
             blue = 5,
-            green = 6, 
+            green = 6,
             variation_a = 7,
             variation_b = 8,
+            nonProduction_environment = 9
 
         }
 
         public enum IdentifiableInformation
-        { 
-            personalIdentifiableInformation_PII = 0,
-            personalFinanceInformation_PFI = 1,
-            protectedHealthInformation_PHI = 2
+        {
+            personal_identifiable_information_PII = 0,
+            personal_finance_information_PFI = 1,
+            protected_health_information_PHI = 2
         }
 
 
 
         //define if entire payload? - what is the value in knowing? - route to other table/db?
-    
+
     }
 }
