@@ -8,6 +8,6 @@ namespace LoggingStandards.Interfaces.SendMessage
 {
     internal interface ISendMessageToQueue
     {
-        Task<bool> SendMessageAsync(string message);
+        Task<bool> SendMessageAsync(string message, Guid messageId);
     }
 }

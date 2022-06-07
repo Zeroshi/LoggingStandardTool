@@ -8,57 +8,68 @@ namespace LoggingStandards.Classes.Enums
 {
     public class Enums
     {
-        public enum transaction_destination
+        public enum Transaction_Destination
         {
-            internal_transaction = 0,
-            external_transaction = 1,
-            internal_testing_transaction = 2,
-            external_testing_transaction = 3
+            not_available = 0,
+            internal_transaction = 1,
+            external_transaction = 2,
+            internal_testing_transaction = 3,
+            external_testing_transaction = 4
         }
 
-        public enum transaction_destination_types
+        public enum Transaction_Destination_Types
         {
-            api = 0,
-            message_queue = 1,
-            database = 2,
-            stream = 3,
-            command_line = 4,
-            serviceBus = 5,
-            cache = 6,
-            serviceMesh = 7,
-            serverless = 8,
+            not_available = 0,
+            api = 1,
+            message_queue = 2,
+            database = 3,
+            stream = 4,
+            command_line = 5,
+            serviceBus = 6,
+            cache = 7,
+            serviceMesh = 8,
+            serverless = 9
         }
 
-        public enum encryption
+        public enum Encryption
         {
-            encrypted = 0,
-            unecrypted = 1,
-            not_avaiable = 3
+            not_available = 0,
+            encrypted = 1,
+            unecrypted = 2,
         }
 
-        public enum enviroment
+        public enum Enviroment
         {
-            local = 0,
-            development = 1,
-            quality_assurance = 2,
-            stage = 3,
-            production = 4,
-            blue = 5,
-            green = 6,
-            variation_a = 7,
-            variation_b = 8,
-            nonProduction_environment = 9
+            not_available = 0,
+            local = 1,
+            development = 2,
+            quality_assurance = 3,
+            stage = 4,
+            production = 5,
+            blue = 6,
+            green = 7,
+            variation_a = 8,
+            variation_b = 9,
+            nonProduction_environment = 10
 
         }
 
-        public enum IdentifiableInformation
+        public enum Identifiable_Information
         {
-            personal_identifiable_information_PII = 0,
-            personal_finance_information_PFI = 1,
-            protected_health_information_PHI = 2
+            not_available = 0,
+            personal_identifiable_information_PII = 1,
+            personal_finance_information_PFI = 2,
+            protected_health_information_PHI = 3
         }
 
-
+        public enum QueueSelection
+        {
+            None = 0,
+            Azure_Queue = 1,
+            Azure_Service_Bus = 2,
+            RabbitMQ_Queue = 3,
+            RabbitMQ_Topic = 4
+        }
 
         //define if entire payload? - what is the value in knowing? - route to other table/db?
 

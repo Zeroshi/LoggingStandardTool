@@ -1,4 +1,5 @@
 ﻿using LoggingStandards.Interfaces;
+using LoggingStandards.Interfaces.Objects;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace LoggingStandards.Classes
 {
     public class ConvertToJson
     {
-        public string ConvertMessageToJson<T>(T log) where T : IBaseLogging
+        public string ConvertMessageToJson<T>(T log) where T : IEntityBase
         {
             var output = JsonConvert.SerializeObject(log);
             return output;
